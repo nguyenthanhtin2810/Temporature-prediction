@@ -46,7 +46,7 @@ You could find at **model_recusive.pkl**
 #### Evaluation
 * R2 score: 0.9862135529617928
 * Mean absolute error: 0.36944128469038023
-* Mean squared error: 0.32951367709724566
+* Mean squared error: 0.32951367709724566 
 
 #### Plot the actual and predicted temperature over time
 <img src="recursive_ts_forecasting.jpg" width="400" height="400"> 
