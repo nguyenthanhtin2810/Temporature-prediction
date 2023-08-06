@@ -52,8 +52,8 @@ with open('model_recursive.pkl', 'wb') as model_file:
     pickle.dump(reg, model_file)
 
 # Plot the actual temperature and predicted temperature over time
-plt.plot(data["Time"][-500:], y_test.values[-500:], label="Actual")
-plt.plot(data["Time"][-500:], y_predict[-500:], label="Predicted")
+plt.plot(data["Time"][-100:], y_test.values[-100:], label="Actual")
+plt.plot(data["Time"][-100:], y_predict[-100:], label="Predicted")
 plt.xlabel("Time")
 plt.ylabel("Temperature")
 plt.title("Temperature vs Time Graph")
