@@ -49,7 +49,6 @@ You could find at **model_recusive.pkl**
 * Mean squared error: 0.32951367709724566 
 
 #### Plot the actual and predicted temperature over time
-<img src="recursive_ts_forecasting.jpg" width="400" height="400"> 
 
 ### Direct Time Series Forecasting
 In the Direct Time Series Forecasting method, I utilize historical temperature data to directly predict multiple future values in a single step. (using multiple models)
