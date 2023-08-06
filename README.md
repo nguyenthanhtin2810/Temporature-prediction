@@ -48,7 +48,8 @@ You could find at **model_recusive.pkl**
 * Mean absolute error: 0.36944128469038023
 * Mean squared error: 0.32951367709724566 
 
-#### Plot the actual and predicted temperature over time
+#### Plot the actual and predicted temperature over time (100 data points)
+<img src="recursive_ts_forecasting.jpg" width="400" height="400">
 
 ### Direct Time Series Forecasting
 In the Direct Time Series Forecasting method, I utilize historical temperature data to directly predict multiple future values in a single step. (using multiple models)
@@ -73,8 +74,9 @@ You could find at **model_direct.pkl**
 |Mean absoluate error|0.36943193645662054|0.6021966226577993|0.8319678639533676|
 |Mean squared error|0.3295113928844136|0.8263742707648775|1.4971896899093258|
 
-#### Plot the actual and predicted temperature over time
-
+#### Plot the actual and predicted temperature over time (100 data points)
+<img src="direct_ts_forecasting.jpg" width="800" height="800">
+     
 ## Requirements
 * python
 * pandas
