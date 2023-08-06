@@ -40,7 +40,7 @@ In the Recursive Time Series Forecasting method, I use historical temperature da
 |20.55|20.4|20.25|20.1|19.6|19.1|
 |20.4|20.25|20.1|19.6|19.1|18.95|
 
-#### Model
+#### Trained model
 You could find at **model_recusive.pkl**
 
 #### Evaluation
@@ -64,7 +64,7 @@ In the Direct Time Series Forecasting method, I utilize historical temperature d
 |20.55|20.4|20.25|20.1|19.6|19.1|18.95||
 |20.4|20.25|20.1|19.6|19.1|18.95|||
 
-#### Models
+#### Trained models
 You could find at **model_direct.pkl**
 
 #### Evaluation
