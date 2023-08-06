@@ -74,7 +74,6 @@ You could find at **model_direct.pkl**
 |Mean squared error|0.3295113928844136|0.8263742707648775|1.4971896899093258|
 
 #### Plot the actual and predicted temperature over time
-<img src="direct_ts_forecasting.jpg" width="800" height="800"> 
 
 ## Requirements
 * python
