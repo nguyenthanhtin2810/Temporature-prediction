@@ -6,7 +6,9 @@
 In this project, I employ time series analysis techniques to predict temperature values. By analyzing historical temperature data, I aim to create a model that can provide accurate temperature forecasts.
 
 ## Dataset
-I use a dataset containing historical temperature records. You can find the dataset at file 'temperature.csv'.
+I use a dataset containing historical temperature records. You can find the dataset at **temperature.csv**.
+
+10 samples in this dataset.
 
 <a name="sample"></a>
 
@@ -28,10 +30,48 @@ I use a dataset containing historical temperature records. You can find the data
 ### Recursive Time Series Forecasting
 In the Recursive Time Series Forecasting method, I use historical temperature data to predict future values one step at a time.
 
-A recursive dataset with a window size of 5 from this dataset from [this dataset](#sample)
+#### A recursive dataset with a window size of 5 from [this dataset](#sample)
+
+|Temperature|Temperature_1|Temperature_2|Temperature_3|Temperature_4|target|  
+|-----------|:-----------:|:-----------:|:-----------:|:-----------:|:----:|
+|21.4|21.05|20.7|20.55|20.4|20.25|
+|21.05|20.7|20.55|20.4|20.25|20.1|
+|20.7|20.55|20.4|20.25|20.1|19.6|
+|20.55|20.4|20.25|20.1|19.6|19.1|
+|20.4|20.25|20.1|19.6|19.1|18.95|
+
+#### Model
+You could find my trained model at **model_recusive.pkl**
+
+#### Evaluation
+* R2 score: 0.9862135529617928
+* Mean absolute error: 0.36944128469038023
+* Mean squared error: 0.32951367709724566
+
+#### 
 
 ### Direct Time Series Forecasting
 In the Direct Time Series Forecasting method, I utilize historical temperature data to directly predict multiple future values in a single step. (using multiple models)
+
+#### A direct dataset with a window size of 5 and a target size of 3 (using 3 models) from [this dataset](#sample)
+
+|Temperature|Temperature_1|Temperature_2|Temperature_3|Temperature_4|target_0|target_1|target_2|
+|-----------|:-----------:|:-----------:|:-----------:|:-----------:|:------:|:------:|:------:|
+|21.4|21.05|20.7|20.55|20.4|20.25|20.1|19.6|
+|21.05|20.7|20.55|20.4|20.25|20.1|19.6|19.1|
+|20.7|20.55|20.4|20.25|20.1|19.6|19.1|18.95|
+|20.55|20.4|20.25|20.1|19.6|19.1|18.95||
+|20.4|20.25|20.1|19.6|19.1|18.95|||
+
+#### Models
+You could find my trained model at **model_direct.pkl**
+
+#### Evaluation
+|Metric|Model_1|Model_2|Model_3|
+|-----------|:-----------:|:-----------:|:-----------:|
+|R2 score|0.9862156864978485|0.9654280037461876|0.9373594245073072|
+|Mean absoluate error|0.36943193645662054|0.6021966226577993|0.8319678639533676|
+|Mean squared error|0.3295113928844136|0.8263742707648775|1.4971896899093258|
 
 ## Requirements
 * python
