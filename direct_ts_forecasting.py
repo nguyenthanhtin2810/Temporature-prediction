@@ -74,8 +74,8 @@ while s != target_size:
 plt.figure(figsize=(a*4, b*4))
 for i in range(target_size):
     plt.subplot(b, a, i + 1)
-    plt.plot(data["Time"][-200:], y_test[i].values[-200:], label="Actual")
-    plt.plot(data["Time"][-200:], y_predict[i][-200:], label=f"Predicted_{i}")
+    plt.plot(data["Time"][-100:], y_test[f"target_{i}"][-100:], label="Actual")
+    plt.plot(data["Time"][-100:], y_predict[i][-100:], label=f"Predicted")
     plt.xlabel("Time")
     plt.ylabel("Temperature")
     plt.title(f"Model_{i}")
