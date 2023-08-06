@@ -61,8 +61,6 @@ In the Direct Time Series Forecasting method, I utilize historical temperature d
 |21.4|21.05|20.7|20.55|20.4|20.25|20.1|19.6|
 |21.05|20.7|20.55|20.4|20.25|20.1|19.6|19.1|
 |20.7|20.55|20.4|20.25|20.1|19.6|19.1|18.95|
-|20.55|20.4|20.25|20.1|19.6|19.1|18.95||
-|20.4|20.25|20.1|19.6|19.1|18.95|||
 
 #### Trained models
 You could find at **model_direct.pkl**
